@@ -1,6 +1,3 @@
-# API de Clima com LLM e Flask (compatível com Postman)
-
-Este projeto usa um modelo compatível com contas gratuitas da Hugging Face (sem erros de permissão).
 
 ## Modelo usado:
 https://huggingface.co/mrm8488/t5-base-finetuned-common_gen
@@ -14,7 +11,7 @@ pip install -r requirements.txt
 
 2. Coloque seu token Hugging Face no `.env`:
 ```
-HF_TOKEN=hf_seutokenaqui
+HF_TOKEN=hf_
 ```
 
 3. Inicie o Flask:
@@ -28,6 +25,6 @@ python app.py
 - Body (raw, JSON):
 ```json
 {
-  "prompt": "Explique o contexto climático abaixo:"
+  "prompt": "Hoje teremos pancadas de chuva no interior e tempo nublado no litoral:"
 }
 ```
